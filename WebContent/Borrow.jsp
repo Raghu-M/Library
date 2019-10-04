@@ -3,7 +3,7 @@
 <%@page import="com.hcl.library.DaoConnection"%>
 <%@page import="java.sql.Connection"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -11,13 +11,14 @@
 <title>Insert title here</title>
 </head>
 <body>
-<center>
-<%
+	<center>
+		<%
 	
 	Connection con = DaoConnection.getconnection();
 String bkid[] = request.getParameterValues("ckid");
 	if(bkid == null){
-		%> please Select the Book<%
+		%>
+		please Select the Book<%
 	}
 	else{
 	String user  = (String) session.getAttribute("user");
@@ -62,15 +63,21 @@ String bkid[] = request.getParameterValues("ckid");
 				pst.setInt(2, Integer.parseInt(i));
 				pst.executeUpdate();
 				}
-			%>BOOK BORROWED</br><a href="Menu.jsp"><input type="button" value="Back To Books" /></a><%
+			%>BOOK BORROWED</br>
+		<a href="Menu.jsp"><input type="button" value="Back To Books" /></a>
+		<%
 		} else {
-			%>You Have Max Book</br><a href="Menu.jsp"><input type="button" value="Back To Books" /></a><% 
+			%>You Have Max Book</br>
+		<a href="Menu.jsp"><input type="button" value="Back To Books" /></a>
+		<% 
 		}
-	} else { %>YOU Already Have One Of The Book</br><a href="Menu.jsp"><input type="button" value="Back To Books" /></a><%
+	} else { %>YOU Already Have One Of The Book</br>
+		<a href="Menu.jsp"><input type="button" value="Back To Books" /></a>
+		<%
 		
 	}
 	}
 %>
-</center>
+	</center>
 </body>
 </html>

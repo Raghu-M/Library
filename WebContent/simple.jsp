@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -42,14 +42,14 @@ function myfunction1(){
 <title>Insert title here</title>
 </head>
 <body>
-<center>
-<form name="c" id="C">
- <input type="checkbox" onchange="myfunction()" name = "chk"  />
-  <input type="checkbox" onchange="myfunction()" name = "chk" />
-   <input type="checkbox" onchange="myfunction()" name = "chk" />
- <input type="button" id="but" value="hello hi" disabled/>
- </form>
-</center>
+	<center>
+		<form name="c" id="C">
+			<input type="checkbox" onchange="myfunction()" name="chk" /> <input
+				type="checkbox" onchange="myfunction()" name="chk" /> <input
+				type="checkbox" onchange="myfunction()" name="chk" /> <input
+				type="button" id="but" value="hello hi" disabled />
+		</form>
+	</center>
 
 </body>
 </html>
